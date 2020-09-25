@@ -5,7 +5,7 @@
 }
 
 .App-content {
-  background-color: #282c34;
+  background-color:#AC6DDE;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -16,11 +16,13 @@
   color: white;
 }
 
-button{
-  font-size: 32px;
+.App-logo {
+  margin: 10px auto;
+  padding: 20px 0;
+  width: 144px;
 }
 
-a{
-  color: #09d;
-  font-size: 1.4rem;
+.App-logo img {
+  object-fit: cover;
+  width: 100%;
 }
