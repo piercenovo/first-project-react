@@ -1,25 +1,26 @@
-import React, {useState, useEffect} from 'react';
+import React from 'react';
 import './App.css';
-import getGifs from './services/getGifs';
 
+// import ListOfGifs from './components/ListOfGifs/index';
 
-function App() {
-  const [gifs, setGifs] = useState([])
+import Home from './pages/Home'
+import SearchResults from './pages/SearchResults'
+// import Detail from './pages/Detail'
 
-  useEffect(()=> {
-    getGifs().then(gifs => setGifs(gifs))
-  },[] );
+import { Link, Route } from "wouter";
+
+export default function App() {
 
   return (
     <div className="App">
       <section className="App-content">
-        {
-          gifs.map(singleGif => <img src={singleGif} />)
-        } 
-        
+        <Link to='/'>
+          <img className="App-logo" alt='Giphy Logo' src="/isologo.png"/>
+        </Link>
+        <Route component={Home} path="/" />
+        <Route component={SearchResults} path="/search/:keyword"/>
       </section>
     </div>
-  );
+  )
 }
 
-export default App;
