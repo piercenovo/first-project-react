@@ -21,9 +21,9 @@ button{
 }
 
 a {
-  font-size: 25px;
+  font-size: 24px;
   text-decoration: none;
-  /* font-weight: 400; */
+  font-weight: 400;
 }
 
 ul {
@@ -42,5 +42,6 @@ input[type=text] {
   border-radius: 6px;
   font-size: 16px;
   border: 1px solid #ccc;
-  padding: 4px 16px;
+  padding: 9px 40px;
 }
+
