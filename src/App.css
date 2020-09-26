@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  box-sizing: border-box;
   font-size: 16px;
 }
 
@@ -17,15 +16,21 @@
 }
 
 .App-logo {
+  object-fit: contain;
+  height: 250px;
+}
+
+/* .App-logo {
   margin: 10px auto;
   padding: 20px 0;
   width: 144px;
+  object-fit: contain;
+
 }
 
 .App-logo img {
-  object-fit: cover;
   width: 100%;
-}
+} */
 
 h3{
   font-size: 35px;
