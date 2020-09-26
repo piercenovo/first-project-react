@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --results-columns: 2;
 }
 
@@ -10,13 +10,13 @@
 
 .ListOfGifs-item {
   -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
-  page-break-inside: avoid; /* Firefox */
-  break-inside: avoid; /* IE 10+ */
-  background-color: #eee;
-  display: inline-block;
-  width: 100%;
-}
-
+  /* page-break-inside: avoid; /* Firefox */
+  /* break-inside: avoid; /* IE 10+ */
+  /* background-color: #eee; */
+  /* display: inline-block; */
+  /* width: 100%; */
+/* } */
+/* 
 @media (min-width: 600px) {
   :root {
     --results-columns: 3;
@@ -26,18 +26,22 @@
 @media (min-width: 800px) {
   :root {
     --results-columns: 4;
-  }
-}
+  } */
+/* } */
 
-/* :root {
+/* ---------------------------------------------
+*/
+
+
+:root {
   --gridList-column: 250px;
   --gridList-rows: 250px;
-  --gridList-gap: 8px;
+  --gridList-gap: 12px;
 }
 
 .ListOfGifs {
   display: grid;
-  width: 100%;
+  width: 85%;
   min-height: 100vh;
   grid-template-columns: repeat(auto-fit, minmax(var(--gridList-column), 1fr));
   grid-auto-rows: var(--gridList-rows);
@@ -68,4 +72,4 @@
    .ListOfGifs {
   padding: 5px 5px;
 }
-} */
+}
