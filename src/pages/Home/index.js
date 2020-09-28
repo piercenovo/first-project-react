@@ -26,9 +26,10 @@ export default function Home() {
     return (
         <>
         <form onSubmit={handleSubmit}>
+            <button>Buscar</button>
             <input placeholder="Busca el gif aquí.." onChange={handleChange} type="text" value={keyword} />
         </form>
-        <h3>Últimas búsquedas</h3>
+        <h3 className="App-title">Últimas búsquedas</h3>
         <ListOfGifs gifs={gifs} />
         <h3>Disfruta los gifs</h3>
         <ul>

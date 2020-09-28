@@ -2,8 +2,15 @@
   text-align: center;
 }
 
+.App-title {
+  color: white;
+  font-size: 24px;
+  width: 85%;
+  margin: 30px 0;
+}
+
 .App-content {
-  background-color:#AC6DDE;
+  background-color: #151515;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -12,12 +19,18 @@
   font-size: calc(10px + 2vmin);
   padding: 16px;
   color: white;
-  /* text-align: left; */
+  text-align: left;
 }
 
-.App-logo {
+/* .App-logo {
   object-fit: contain;
   max-height: 250px;
+} */
+
+.App-logo {
+  margin: 10px auto;
+  padding: 20px 0 50px 0;
+  width: 120px;
 }
 
 /* .App-logo {
@@ -32,6 +45,6 @@
   width: 100%;
 } */
 
-h3{
+/* h3{
   font-size: 35px;
-}
+} */

@@ -17,7 +17,7 @@ export default function App() {
       <div className="App">
         <section className="App-content">
           <Link to='/'>
-            <img className="App-logo" alt='Giphy Logo' src="/isologoo.png" />
+            <img className="App-logo" alt='Giphy Logo' src="/logo.png" />
           </Link>
           <GifsContextProvider>
             <Route component={Home} path="/" />
