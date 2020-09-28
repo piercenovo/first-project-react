@@ -34,7 +34,8 @@ i {
 
 .Gif {
   --gifShadow-size : var(--gridList-gap, 6px);
-  margin-bottom:0em;
+  margin-bottom: .5em;
+  position: relative;
   /* background-color: #fff; */
 }
 
