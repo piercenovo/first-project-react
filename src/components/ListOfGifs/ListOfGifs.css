@@ -50,16 +50,29 @@
   grid-gap: var(--gridList-gap, 6px);
   gap: var(--gridList-gap, 6px);
   align-items: center;
+  justify-content: center;
   padding: 10px 15px;
 }
 
-@media screen and (max-width: 37.5rem) {
+
+@media screen and (max-width: 27.5rem) {
   :root {
     --gridList-column: 180px;
     --gridList-rows: 200px;
   }
   .ListOfGifs {
-  padding: 5px 5px;
+    width: 100%;
+  padding: 5px 15px;
+  }
+}
+@media screen and (max-width: 375px) {
+  :root {
+    --gridList-column: 180px;
+    --gridList-rows: 200px;
+  }
+  .ListOfGifs {
+    width: 100%;
+  padding: 5px 6px;
 }
 
 }
@@ -70,6 +83,22 @@
     --gridList-rows: 210px;
   }
    .ListOfGifs {
-  padding: 5px 5px;
+     width: 90%;
 }
+}
+
+
+@media screen and (min-width: 1024px) {
+  .ListOfGifs {
+    width: 93%;
+  padding: 5px 6px;
+}
+}
+
+@media screen and (min-width: 1350px) {
+  .ListOfGifs {
+    width: 93%;
+  padding: 5px 6px;
+}
+
 }

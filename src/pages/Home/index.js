@@ -1,8 +1,9 @@
-import React, {useEffect, useState } from 'react'
+import React, {useState} from 'react'
 import {Link, useLocation} from 'wouter'
 import getGifs from '../../services/getGifs'
 import ListOfGifs from '../../components/ListOfGifs'
 import {useGifs} from '../../hooks/useGifs'
+import TrendingSearches from '../../components/TrendingSearches'
 
 const GIFS = ["Pandas", "Perros", "Bob Esponja", "Muebles", "Gatos"]
 
@@ -29,18 +30,15 @@ export default function Home() {
             <button>Buscar</button>
             <input placeholder="Busca el gif aquí.." onChange={handleChange} type="text" value={keyword} />
         </form>
-        <h3 className="App-title">Últimas búsquedas</h3>
-        <ListOfGifs gifs={gifs} />
-        <h3>Disfruta los gifs</h3>
-        <ul>
-            {GIFS.map(enjoyGif => (
-                <li key={enjoyGif}>
-                    <Link to={`/search/${enjoyGif}`}>
-                        Gifs de {enjoyGif}
-                    </Link>
-                </li>
-            ))}
-        </ul>
+        <div className="App-main">
+            <div className="App-results">
+                <h3 className="App-title">Últimas búsquedas</h3>
+                <ListOfGifs gifs={gifs} />
+            </div>
+            <div className="App-category">
+                <TrendingSearches />
+            </div>
+        </div>
         </>
     )
 }

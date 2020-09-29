@@ -5,8 +5,21 @@
 .App-title {
   color: white;
   font-size: 24px;
-  width: 85%;
+  /* width: 85%; */
   margin: 30px 0;
+  padding: 0 3px;
+}
+
+
+.App-logo {
+  margin: 10px auto;
+  padding: 20px 0 50px 0;
+  width: 120px;
+}
+
+.App-logo img {
+  object-fit: cover;
+  width: 100%;
 }
 
 .App-content {
@@ -14,7 +27,9 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+
   align-items: center;
+
   /* justify-content: center; */
   font-size: calc(10px + 2vmin);
   padding: 16px;
@@ -22,16 +37,44 @@
   text-align: left;
 }
 
+
+/*----------*/
+
+.App-main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 85%;
+}
+
+.App-results {
+  flex-shrink: 1;
+  /* width: 100%; */
+}
+
+.App-category {
+  margin-bottom: 25px;
+  /* width: 100%; */
+}
+@media screen and (min-width: 640px){
+  .App-main{
+    flex-direction: initial;
+  }
+
+  .App-category{
+    /* padding: 0 2em; */
+    position: sticky;
+    top: 0;
+    width: 20%;
+  }
+}
+
+
+
 /* .App-logo {
   object-fit: contain;
   max-height: 250px;
 } */
-
-.App-logo {
-  margin: 10px auto;
-  padding: 20px 0 50px 0;
-  width: 120px;
-}
 
 /* .App-logo {
   margin: 10px auto;
