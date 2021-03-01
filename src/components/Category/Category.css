@@ -65,7 +65,6 @@ li{
     .Category-link {
     color: white;
     font-size: 1.3rem;
-    /* padding: 1rem; */
     transition: color ease-in .1s;
 }
 
